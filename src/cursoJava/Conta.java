@@ -36,5 +36,9 @@ public class Conta {
 	protected void setSaldo(double valor){
 		this.saldo += valor;
 	}
+	
+	public void atualiza(double taxa){
+		this.saldo += this.saldo*taxa;
+	}
 
 }
